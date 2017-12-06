@@ -1,0 +1,21 @@
+/** @mainpage Aula número 10 de PARI
+ *
+ * @section intro_sec Sumário da Aula
+ *
+ * Uso de glade para criar interfaces em GTK+\n
+ * Construção e parametrização de widgets\n
+ * Migração do ambiente "make" para "cmake"\n
+ * Integração de GTK+ com leitura por RS232\n
+ *
+ * @section exerc_sec Exercícios
+ *
+ * Exercício 1 - Criação de timers \n
+ * Exercício 2 - Bifurcação de processos mediante o uso de fork() \n
+ * Exercício 3 - Bifurcação de processos com comunicação por sinais entre eles \n
+ * Exercício 4 - A comunicação entre processos (IPC - inter process communication) \n
+ *
+ *
+ *
+ *
+ *
+ */
