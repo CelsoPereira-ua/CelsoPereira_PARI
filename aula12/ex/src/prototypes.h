@@ -16,6 +16,8 @@ void on_drawingarea1_scroll_event(GtkWidget *widget, GdkEventScroll *event, gpoi
 void p_InitTimer();
 gboolean p_ForceRefreshDA(gpointer user_data);
 gboolean pari_UpdateImageAreas(gpointer data);
+gboolean on_drawingarea1_expose_event(GtkWidget * widget, GdkEvent * event, gpointer user_data);
+void pari_ProcessUserOperations(IplImage *src, IplImage *dst);
 
 /* myf.c */
 void InterceptCTRL_C (int a);

@@ -218,6 +218,17 @@ gboolean on_drawingarea1_expose_event(GtkWidget * widget, GdkEvent * event, gpoi
 
         //update the drawing area displays
         pari_RefreshDrawingArea("drawingarea1", src_imageG);
-        pari_RefreshdRawingArea("drawingarea2", dst_imageG);
+        pari_RefreshDrawingArea("drawingarea2", dst_imageG);
         return TRUE;
+}
+
+
+/**
+ * @brief  function description
+ * @param  nn - input param.
+ * @return return param.
+ */
+void pari_ProcessUserOperations(IplImage *src, IplImage *dst)
+{
+	return;
 }
