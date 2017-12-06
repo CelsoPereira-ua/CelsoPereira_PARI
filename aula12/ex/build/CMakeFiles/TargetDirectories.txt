@@ -1,0 +1,8 @@
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/rebuild_cache.dir
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/edit_cache.dir
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/install.dir
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/list_install_components.dir
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/aula12.dir
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/cpfiles.dir
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/install/strip.dir
+/home/celsopereira/Desktop/PARI/aula12/ex/build/CMakeFiles/install/local.dir

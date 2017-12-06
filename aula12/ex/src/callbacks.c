@@ -67,7 +67,7 @@ void on_drawingarea1_scroll_event(GtkWidget *widget, GdkEventScroll *event, gpoi
 
                 case GDK_SCROLL_LEFT:
                 case GDK_SCROLL_RIGHT:
-                case GDK_SCROLL_SMOOTH:
+                //case GDK_SCROLL_SMOOTH:
                         break;
         }
         
@@ -189,4 +189,35 @@ gboolean p_ForceRefreshDA(gpointer user_data)
         gtk_widget_queue_draw(da);  //make draw the widget
 
         return TRUE;  //continue running
+}
+
+
+/**
+ * @brief  função que de tempos a tempos vai atualizar a imagem a partis da webcam
+ * @param  nn - input param.
+ * @return return param.
+ */
+gboolean pari_UpdateImageAreas(gpointer data)
+{
+        //generate an expose event (draw event) on drawingarea1
+        GtkWidget *da1 = GTK_WIDGET(gtk_builder_get_object(builderG, "drawingarea1"));
+        gtk_widget_queue_draw(da1);
+        return TRUE;
+}
+
+
+/**
+ * @brief  function description
+ * @param  nn - input param.
+ * @return return param.
+ */
+gboolean on_drawingarea1_expose_event(GtkWidget * widget, GdkEvent * event, gpointer user_data)
+{
+        pari_PerformImageAcquisition(captureG);             //acquire new image
+        pari_ProcessUserOperations(src_imageG, dst_imageG); // Perform here the openCV transformations
+
+        //update the drawing area displays
+        pari_RefreshDrawingArea("drawingarea1", src_imageG);
+        pari_RefreshdRawingArea("drawingarea2", dst_imageG);
+        return TRUE;
 }
